@@ -1,0 +1,66 @@
+/* responsive design k liye hai ye */
+
+/* navigation section   */
+#navbar{
+    flex-direction: column;   /*navbar me jo logo aur li hain wo upar neeche a jayenge*/
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px    ;
+}
+/* home section */
+#home{
+    height: 322px;
+    padding: 3px 20px;
+}
+#home::before{
+    height: 470px;
+    
+}
+#home h1{
+    padding-bottom: 73px;
+}
+#home p{
+    font-size: 13px;
+}
+/* services section */
+#services{
+    flex-direction: column;
+    margin: 8px;
+}
+
+#services .box img{
+    height: 130px;
+    margin: auto;       
+    display: block;
+}
+/* client section */
+#clients{
+   flex-wrap: wrap;
+}
+#clients img{
+   width: 66px;
+   padding: 6px;
+   height: auto;
+}
+
+/* contact us */
+
+/* footer */
+
+/* utility classes */
+.h-primary{
+    height: 25px;
+    font-size: 33px;
+}
+.h-secondary{
+    height: 25px;
+    font-size: 23px;
+}
+.btn{
+    font-size: 13px;
+    padding:4px 8px ;
+}
+
+

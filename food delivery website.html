@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodgenda.com</title>
+     <!--hame css file ko import kr dia yahan pe-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- isse hamne phone.css ko add krdia,but it will only came in play when width of screen will be less then 860px  -->
+    <link rel="stylesheet" media="screen and (max-width:860px)" href="css/phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans:wght@300&family=Titillium+Web&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&family=Open+Sans:wght@300&family=Titillium+Web&display=swap">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.jpg" alt="foodgenda.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">contact Us</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to FoodGenda</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quis tempora numquam vitae harum quidem
+            commodi, voluptates autem placeat pariatur mollitia fugiat sit.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quis tempora numquam vitae harum quidem
+            commodi, voluptates autem placeat pariatur mollitia fugiat sit.</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 id="headi" class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="images/paneer.jpg" alt="">
+                <h2 class="h-secondary center">North Thali</h2>               <!--here these 2 classes are included in all heading so the inherit those css properties-->
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate voluptates
+                    incidunt quia natus, perspiciatis aspernatur? Eligendi, praesentium. Quas, ipsum. Adipisci,
+                    accusamus enim placeat maiores iste vero fugit vitae dolorum impedit consequuntur doloremque quos,
+                    exercitationem nobis eius laudantium quisquam in est blanditiis libero voluptate molestias.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/Pancakes.jpg" alt="">
+                <h2 class="h-secondary center">Dessert</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate voluptates
+                    incidunt quia natus, perspiciatis aspernatur? Eligendi, praesentium. Quas, ipsum. Adipisci,
+                    accusamus enim placeat maiores iste vero fugit vitae dolorum impedit consequuntur doloremque quos,
+                    exercitationem nobis eius laudantium quisquam in est blanditiis libero voluptate molestias.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pizza.jpg" alt="">
+                <h2 class="h-secondary center">Fast Food</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate voluptates
+                    incidunt quia natus, perspiciatis aspernatur? Eligendi, praesentium. Quas, ipsum. Adipisci,
+                    accusamus enim placeat maiores iste vero fugit vitae dolorum impedit consequuntur doloremque quos,
+                    exercitationem nobis eius laudantium quisquam in est blanditiis libero voluptate molestias.</p>
+            </div>
+            <div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+          <div class="client-item">
+            <img src="images/apple.jpeg" alt="Apple">
+          </div>
+          <div class="client-item">
+            <img src="images/facebook.png" alt="Apple">
+          </div>
+          <div class="client-item">
+            <img src="images/Google.jpg" alt="Apple">
+          </div>
+          <div class="client-item">
+            <img src="images/netflix.png" alt="Apple">
+          </div>
+          <div class="client-item">
+            <img src="images/paytm.jpg" alt="Apple">
+          </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="we dont have a backend bud">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="ph. number">Ph. Number:</label>
+                    <input type="number" name="name" id="ph.number" placeholder="Enter your Ph. Number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Enter Text"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.Foodgenda.com. All Right Reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

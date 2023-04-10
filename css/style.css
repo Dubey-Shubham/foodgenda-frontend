@@ -1,0 +1,213 @@
+/* yahan sab css likhi jayegi */
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variables */
+:root{
+    --navbar-height:59;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#navbar::before{                        /*background k liye before use hota hai*/
+    content: "";
+    background-color: rgb(67, 64, 64);
+    position: absolute;
+    top: 0%;         /*bilkul upar rahega although wo waise bhi rahega */
+    left: 0%;
+    z-index: -1;
+    opacity: .9;
+    height: 100%;
+    width: 100%;
+}
+
+/*navigation bar logo and image  */
+#logo{
+  margin: 2px 2px;
+}
+
+#logo img{
+  margin: 15px 15px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* navigation bar list styling */
+#navbar ul{
+  display: flex;
+}
+#navbar ul li{
+  list-style: none;      /*ek line me lane ko*/
+  font-size: 1.3rem;
+}
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 10px;
+  margin: 2px 9px;
+  text-decoration:none;   /*to remove underline */
+}
+#navbar ul li a:hover{
+  color: rgb(9, 6, 6);
+  background-color: white;
+  border-radius: 12px;
+  
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;  /*top to botton lane k liye*/
+    padding: 3px 200px 1px 200px;
+    margin: 3px 3px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;           /*upar se kitna neeche*/
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+}
+#home::before{
+    content: "";
+    background: url('../images/naan_edited.jpg') no-repeat center center/cover;  /*dot dot slash se ham folder se bahara jayenge, no-repeat se image repeat nhi hogi */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: .9;
+    height: 642px;
+    width: 100%;  
+}
+#home h1{
+    color: white;
+    text-align: center; /*isse kuch hua nhi vaise*/
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* service section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown; 
+    padding: 16px 9px;
+    margin: 3px 6px;
+    background-color: #ece8e8;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;       /*jisse beech me jaye*/
+    display: block;     /*block element ko hi auto kr sakte hain*/
+}
+#services .box p{
+    font-family: 'Kdam Thmor Pro', sans-serif;   
+}
+
+/* client section */
+
+#client-section{
+    height: 344px;
+    padding-bottom:23px ;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../images/img-2.jpeg');
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity: .3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-item{
+    padding: 34px;
+    
+}
+#clients img{
+    height: 124px;
+    margin: 19px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('../images/contact\ us.jpg');
+}
+#contact-box{            /*contact box ko flex kara so that sare imput ko beech me la sake*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;           /*isko iske div me 100% width dedi*/
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+#contact-box form{
+    width: 40%;              /*form ki width bhadane k liye*/
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Anton', sans-serif ;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+}
+
+/* utility classes(classes which can be used at multiple places usually contain like font size button wagera) */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px; 
+    margin: 2px 2px; 
+    font-family: 'Anton', sans-serif;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;  
+}
+
+.btn{
+   padding: 2px 7px; 
+   margin: 17px 2px;
+   border: 2px solid rgb(10, 5, 5);
+   color: white;
+   background-color: brown;
+   font-size: 1.5rem;
+   border-radius: 12px;
+   cursor: pointer;
+}
+.center{
+    text-align: center;
+}
